@@ -1,6 +1,6 @@
 namespace MythicGameJam.UI.Menus
 {
-    public class OptionsMenu : UIMenu
+    public sealed class OptionsMenu : UIMenu
     {
 
     }

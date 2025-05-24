@@ -1,16 +1,36 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 namespace MythicGameJam.UI.Menus
 {
+    [RequireComponent(typeof(CanvasGroup))]
     public abstract class UIMenu : MonoBehaviour
     {
         [SerializeField]
-        private CanvasGroup _canvasGroup;
+        protected CanvasGroup _canvasGroup;
         [SerializeField]
-        private float _transitionDuration = 0.3f;
+        protected float _transitionDuration = 0.3f;
 
-        public virtual IEnumerator EnterMenu(bool instant = false)
+        public event Action OnMenuEntered;
+        public event Action OnMenuLeft;
+
+        protected virtual void Awake()
+        {
+            if (_canvasGroup == null)
+                _canvasGroup = GetComponent<CanvasGroup>();
+
+            if (_canvasGroup == null)
+                Debug.LogWarning($"{nameof(UIMenu)} on {gameObject.name} requires a CanvasGroup.");
+        }
+
+        protected virtual void OnValidate()
+        {
+            if (_canvasGroup == null)
+                _canvasGroup = GetComponent<CanvasGroup>();
+        }
+
+        public virtual IEnumerator EnterMenu(bool instant = false, Action onComplete = null)
         {
             gameObject.SetActive(true);
 
@@ -27,6 +47,8 @@ namespace MythicGameJam.UI.Menus
                 _canvasGroup.alpha = 1f;
                 _canvasGroup.interactable = true;
                 _canvasGroup.blocksRaycasts = true;
+                OnMenuEntered?.Invoke();
+                onComplete?.Invoke();
                 yield break;
             }
 
@@ -40,9 +62,11 @@ namespace MythicGameJam.UI.Menus
             _canvasGroup.alpha = 1f;
             _canvasGroup.interactable = true;
             _canvasGroup.blocksRaycasts = true;
+            OnMenuEntered?.Invoke();
+            onComplete?.Invoke();
         }
 
-        public virtual IEnumerator LeaveMenu(bool instant = false)
+        public virtual IEnumerator LeaveMenu(bool instant = false, Action onComplete = null)
         {
             if (_canvasGroup == null) yield break;
 
@@ -56,6 +80,8 @@ namespace MythicGameJam.UI.Menus
             {
                 _canvasGroup.alpha = 0f;
                 gameObject.SetActive(false);
+                OnMenuLeft?.Invoke();
+                onComplete?.Invoke();
                 yield break;
             }
 
@@ -68,6 +94,8 @@ namespace MythicGameJam.UI.Menus
 
             _canvasGroup.alpha = 0f;
             gameObject.SetActive(false);
+            OnMenuLeft?.Invoke();
+            onComplete?.Invoke();
         }
     }
 }
