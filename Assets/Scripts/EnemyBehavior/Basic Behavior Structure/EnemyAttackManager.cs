@@ -1,10 +1,8 @@
 using System;
 using UnityEngine;
 
-public class EnemyAttackManager : MonoBehaviour
+public class EnemyAttackController : MonoBehaviour
 {
-
-
     [SerializeField] private float secondsBetweenShots = 0.5f;
     public bool canAttack = false;
     private float attackTimer = 0f;
@@ -14,7 +12,6 @@ public class EnemyAttackManager : MonoBehaviour
     [SerializeField] private AnimationClip loopAttackAnimation;
     private int currentAttackIndex = 0;
     private bool isAttacking = false;
-
     void Start()
     {
         enemyRenderer = GetComponent<Renderer>();
@@ -23,7 +20,6 @@ public class EnemyAttackManager : MonoBehaviour
             Debug.LogWarning("Hey, you forgot the animator in EnemyAttackManager.");
         }
     }
-
     void Update()
     {
         if (canAttack && Time.timeScale != 0 && IsInCameraBounds() && !isAttacking)
@@ -37,7 +33,6 @@ public class EnemyAttackManager : MonoBehaviour
             }
         }
     }
-
     private void StartAttack()
     {
         isAttacking = true;
@@ -56,7 +51,6 @@ public class EnemyAttackManager : MonoBehaviour
         }
         Invoke("StopAttack", GetCurrentAnimationLength());
     }
-
     private void PlayNextAttackAnimation()
     {
         if (currentAttackIndex < attackAnimations.Length)
@@ -69,7 +63,6 @@ public class EnemyAttackManager : MonoBehaviour
             animator.Play(loopAttackAnimation.name);
         }
     }
-
     private float GetCurrentAnimationLength()
     {
         if (currentAttackIndex - 1 < attackAnimations.Length)
@@ -78,7 +71,6 @@ public class EnemyAttackManager : MonoBehaviour
         }
         return loopAttackAnimation.length;
     }
-
     private void StopAttack()
     {
         isAttacking = false;
@@ -88,7 +80,6 @@ public class EnemyAttackManager : MonoBehaviour
             animator.SetBool("isAttacking", false);
         }
     }
-
     private bool IsInCameraBounds()
     {
         return enemyRenderer != null && enemyRenderer.isVisible;

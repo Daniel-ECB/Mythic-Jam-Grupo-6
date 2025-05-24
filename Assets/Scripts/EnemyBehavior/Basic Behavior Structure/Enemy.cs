@@ -1,20 +1,21 @@
-using System;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public sealed class Enemy : MonoBehaviour
 {
-    [SerializeField] private float[] _health = { 100f };
-    public int scoreToAdd = 100;
+    [SerializeField] private float[] _initialHealth = { 100f }; 
+    private float[] _health;
+    public float CurrentHealth =>
+        _currentHealthIndex < _health.Length ? _health[_currentHealthIndex] : 0f;
+    // This is here to prevent OOB index range access during execution time, since it used to go OOB once the last health bar depletes. This is probably a hack fix.
+
     private int _currentHealthIndex = 0;
     public int HealthIndex;
     [SerializeField] private GameObject dropItem;
-    public float CurrentHealth => _health[_currentHealthIndex];
-    public float MaxHealth => _health.Length > 0 ? _health[_currentHealthIndex] : 0f;
-
     [SerializeField] private ParticleSystem particlePrefab;
-
-    
-
+    void OnEnable()
+    {
+        ResetEnemy(); 
+    }
     void Update()
     {
         if (HealthIndex != _currentHealthIndex)
@@ -24,7 +25,7 @@ public class Enemy : MonoBehaviour
 
         CheckBoundaries();
 
-        if (_health[_currentHealthIndex] <= 0)
+        if (_currentHealthIndex < _health.Length && _health[_currentHealthIndex] <= 0)
         {
             _currentHealthIndex++;
             if (_currentHealthIndex >= _health.Length)
@@ -33,13 +34,12 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-
     public void TakeDamage(float damage)
     {
         if (_currentHealthIndex < _health.Length)
         {
             _health[_currentHealthIndex] -= damage;
-           
+
             if (_health[_currentHealthIndex] <= 0)
             {
                 _currentHealthIndex++;
@@ -50,7 +50,6 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-
     private void Die()
     {
         bool allHealthEmpty = true;
@@ -69,25 +68,37 @@ public class Enemy : MonoBehaviour
             {
                 Instantiate(dropItem, transform.position, Quaternion.identity);
             }
+
             if (particlePrefab != null)
             {
-                ParticleSystem spawnedParticle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
+                Instantiate(particlePrefab, transform.position, Quaternion.identity);
             }
+
+            gameObject.SetActive(false); // Recycle the enemy instead of destroying it
         }
-        ;
-        Destroy(gameObject);
     }
-
-    
-
+    public void ResetEnemy()
+    {
+        _currentHealthIndex = 0;
+        _health = new float[_initialHealth.Length];
+        for (int i = 0; i < _initialHealth.Length; i++)
+        {
+            _health[i] = _initialHealth[i];
+        }
+        //This parametrizes health so it automatically resets to the one it had at the beginning once it respawns.
+    }
     private void CheckBoundaries()
     {
-        if (transform.position.x < EnemyMovementManager.minX || transform.position.x > EnemyMovementManager.maxX ||
-            transform.position.y < EnemyMovementManager.minY || transform.position.y > EnemyMovementManager.maxY)
+        if (transform.position.x < EnemyMovementController.minX || transform.position.x > EnemyMovementController.maxX ||
+            transform.position.y < EnemyMovementController.minY || transform.position.y > EnemyMovementController.maxY)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false); // Use pooling instead of destroying when it leaves the limit.
         }
     }
 }
+
+
+
+
 
 

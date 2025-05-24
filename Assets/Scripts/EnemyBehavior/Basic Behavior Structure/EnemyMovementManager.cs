@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyMovementManager : MonoBehaviour
+public class EnemyMovementController : MonoBehaviour
 {
     [SerializeField] public static float minX = -10f;
     [SerializeField] public static float maxX = 10f;
@@ -28,7 +28,6 @@ public class EnemyMovementManager : MonoBehaviour
             Debug.LogWarning("You forgot the Animator in the EnemyMovementManager");
         }
     }
-
     void Update()
     {
         delayTimer += Time.deltaTime;
