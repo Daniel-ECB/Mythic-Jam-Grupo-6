@@ -1,51 +1,44 @@
+using MythicGameJam.Core.Utils;
 using UnityEngine;
 
-public class BaseAudioSystem : MonoBehaviour
+namespace MythicGameJam.Audio
 {
-    public static BaseAudioSystem instance;
-    public AudioSource audioSource;
-
-    private void Awake()
+    public sealed class BaseAudioSystem : Singleton<BaseAudioSystem>
     {
-        
-        if (instance == null)
+        [SerializeField]
+        private AudioSource audioSource;
+
+        protected override void Awake()
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            audioSource = GetComponent<AudioSource>();
-            audioSource.Play();
-        }
-        else
-        {
-            Destroy(gameObject);
+            base.Awake();
+
+            if (audioSource == null)
+            {
+                audioSource = GetComponent<AudioSource>();
+                audioSource.Play();
+            }
         }
 
+        public void PauseMusic()
+        {
+            if (audioSource.isPlaying)
+                audioSource.Pause();
+        }
+
+        public void ResumeMusic()
+        {
+            if (!audioSource.isPlaying)
+                audioSource.UnPause();
+        }
+
+        public void StopMusic()
+        {
+            audioSource.Stop();
+        }
+
+        public void SetVolume(float volume)
+        {
+            audioSource.volume = volume;
+        }
     }
-
-    public void PauseMusic()
-    {
-        if (audioSource.isPlaying)
-        audioSource.Pause();
-    }
-
-    public void ResumeMusic()
-    {
-        if (!audioSource.isPlaying)
-            audioSource.UnPause();
-    }
-
-    public void StopMusic()
-    {
-        audioSource.Stop();
-    }
-
-    public void SetVolume(float volume)
-    {
-        audioSource.volume = volume;
-    }
-
-    /* Code for pause and settings Menu
-    BaseAudioSystem.Instance.PauseMusic(); 
-    BaseAudioSystem.Instance.ResumeMusic();*/
-
 }
