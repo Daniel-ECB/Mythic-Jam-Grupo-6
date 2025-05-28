@@ -35,6 +35,9 @@ namespace MythicGameJam.Input
 
         private void OnDisable()
         {
+            if (_inputActions == null)
+                return;
+
             _inputActions.Player.Move.performed -= HandleMove;
             _inputActions.Player.Move.canceled -= HandleMove;
 
