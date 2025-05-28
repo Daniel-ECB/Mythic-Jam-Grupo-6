@@ -1,4 +1,3 @@
-using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
@@ -8,7 +7,6 @@ namespace MythicGameJam.Core.GameManagement
     {
         private readonly GameManager _gameManager;
         private readonly string _targetScene;
-        private AsyncOperation _loadOperation;
 
         public LoadingState(GameManager gameManager, string targetScene)
         {
@@ -18,7 +16,7 @@ namespace MythicGameJam.Core.GameManagement
 
         public void Enter()
         {
-            _gameManager.StartCoroutine(LoadSceneAsync());
+            _gameManager.StartCoroutine(LoadSceneWithFade());
         }
 
         public void Exit()
@@ -31,19 +29,19 @@ namespace MythicGameJam.Core.GameManagement
             // Optionally: update loading UI/progress bar
         }
 
-        private IEnumerator LoadSceneAsync()
+        private IEnumerator LoadSceneWithFade()
         {
-            // Optionally: show loading UI here
+            var fader = SceneFader.Instance;
+            if (fader != null)
+                yield return fader.FadeOut();
 
-            _loadOperation = SceneManager.LoadSceneAsync(_targetScene);
-
-            while (!_loadOperation.isDone)
-            {
-                // Optionally: update loading UI/progress bar here
+            var loadOp = SceneManager.LoadSceneAsync(_targetScene);
+            while (!loadOp.isDone)
                 yield return null;
-            }
 
-            // After loading, transition to the next state (e.g., Gameplay)
+            if (fader != null)
+                yield return fader.FadeIn();
+
             _gameManager.StartGameplay();
         }
     }
