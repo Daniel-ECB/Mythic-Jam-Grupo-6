@@ -1,55 +1,56 @@
 using System.Collections.Generic;
 using UnityEngine;
+using MythicGameJam.Core.Utils;
 
-public class EnemyPoolManager : MonoBehaviour
+namespace MythicGameJam.Enemies
 {
-    [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private int initialPoolSize = 10;
-
-    private List<GameObject> enemyPool = new List<GameObject>();
-
-    public static EnemyPoolManager Instance { get; private set; }
-
-    void Awake()
+    public sealed class EnemyPoolManager : Singleton<EnemyPoolManager>
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
-    }
+        [SerializeField]
+        private GameObject enemyPrefab;
 
-    void Start()
-    {
-        for (int i = 0; i < initialPoolSize; i++)
+        [SerializeField]
+        private int initialPoolSize = 10;
+
+        private List<GameObject> enemyPool = new List<GameObject>();
+
+        protected override void Awake()
         {
-            GameObject enemy = Instantiate(enemyPrefab, transform);
-            enemy.SetActive(false);
-            enemyPool.Add(enemy);
+            base.Awake();
         }
-    }
 
-    public GameObject GetEnemy(Vector3 spawnPosition)
-    {
-        foreach (GameObject enemy in enemyPool)
+        private void Start()
         {
-            if (!enemy.activeInHierarchy)
+            for (int i = 0; i < initialPoolSize; i++)
             {
-                enemy.transform.position = spawnPosition;
-                enemy.SetActive(true);
-                enemy.GetComponent<Enemy>().ResetEnemy(); 
-                return enemy;
+                GameObject enemy = Instantiate(enemyPrefab, transform);
+                enemy.SetActive(false);
+                enemyPool.Add(enemy);
             }
         }
 
-        GameObject newEnemy = Instantiate(enemyPrefab, transform);
-        newEnemy.SetActive(false);
-        enemyPool.Add(newEnemy);
-        return GetEnemy(spawnPosition);
-    }
+        public GameObject GetEnemy(Vector3 spawnPosition)
+        {
+            foreach (GameObject enemy in enemyPool)
+            {
+                if (!enemy.activeInHierarchy)
+                {
+                    enemy.transform.position = spawnPosition;
+                    enemy.SetActive(true);
+                    enemy.GetComponent<Enemy>().ResetEnemy();
+                    return enemy;
+                }
+            }
 
-    public void ReturnToPool(GameObject enemy)
-    {
-        enemy.SetActive(false);
+            GameObject newEnemy = Instantiate(enemyPrefab, transform);
+            newEnemy.SetActive(false);
+            enemyPool.Add(newEnemy);
+            return GetEnemy(spawnPosition);
+        }
+
+        public void ReturnToPool(GameObject enemy)
+        {
+            enemy.SetActive(false);
+        }
     }
 }
-
