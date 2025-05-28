@@ -1,0 +1,1047 @@
+fileFormatVersion: 2
+guid: 4d0899f58658be349baba42a891dc364
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7932772039103569195
+    second: waterenemy_35x35_0
+  - first:
+      213: -8417371608296398513
+    second: waterenemy_35x35_1
+  - first:
+      213: 5425587640590457256
+    second: waterenemy_35x35_2
+  - first:
+      213: 5505058569441493042
+    second: waterenemy_35x35_3
+  - first:
+      213: -1851800913343677627
+    second: waterenemy_35x35_4
+  - first:
+      213: -30992567819625159
+    second: waterenemy_35x35_5
+  - first:
+      213: 2153875771928971669
+    second: waterenemy_35x35_6
+  - first:
+      213: 8482791754239277811
+    second: waterenemy_35x35_7
+  - first:
+      213: 6618703837769449351
+    second: waterenemy_35x35_8
+  - first:
+      213: -3265222630757362683
+    second: waterenemy_35x35_9
+  - first:
+      213: -6709428705018957569
+    second: waterenemy_35x35_10
+  - first:
+      213: -8947358564777530957
+    second: waterenemy_35x35_11
+  - first:
+      213: 4131001555798348883
+    second: waterenemy_35x35_12
+  - first:
+      213: -8129236182932971568
+    second: waterenemy_35x35_13
+  - first:
+      213: -5090765522401414845
+    second: waterenemy_35x35_14
+  - first:
+      213: 1451439886012328088
+    second: waterenemy_35x35_15
+  - first:
+      213: 2479463930063983248
+    second: waterenemy_35x35_16
+  - first:
+      213: 1146037800056380178
+    second: waterenemy_35x35_17
+  - first:
+      213: -4301441810213746633
+    second: waterenemy_35x35_18
+  - first:
+      213: -6119175499343895965
+    second: waterenemy_35x35_19
+  - first:
+      213: -4338690970488072192
+    second: waterenemy_35x35_20
+  - first:
+      213: -5962691606557218099
+    second: waterenemy_35x35_21
+  - first:
+      213: -5840396998145557899
+    second: waterenemy_35x35_22
+  - first:
+      213: 3193568870943238581
+    second: waterenemy_35x35_23
+  - first:
+      213: 4621138772129616859
+    second: waterenemy_35x35_24
+  - first:
+      213: -54785150464401048
+    second: waterenemy_35x35_25
+  - first:
+      213: -7125155307564179065
+    second: waterenemy_35x35_26
+  - first:
+      213: -6259637531479695888
+    second: waterenemy_35x35_27
+  - first:
+      213: 2553462231061698920
+    second: waterenemy_35x35_28
+  - first:
+      213: -3889581312870592888
+    second: waterenemy_35x35_29
+  - first:
+      213: 7636854380337982604
+    second: waterenemy_35x35_30
+  - first:
+      213: 2261172869307257078
+    second: waterenemy_35x35_31
+  - first:
+      213: 8940608984575919666
+    second: waterenemy_35x35_32
+  - first:
+      213: 2633266631513934387
+    second: waterenemy_35x35_33
+  - first:
+      213: -3976793570685031452
+    second: waterenemy_35x35_34
+  - first:
+      213: -4086595569257646974
+    second: waterenemy_35x35_35
+  - first:
+      213: -3099962828203264077
+    second: waterenemy_35x35_36
+  - first:
+      213: 1602964891140704553
+    second: waterenemy_35x35_37
+  - first:
+      213: 8083531318421861275
+    second: waterenemy_35x35_38
+  - first:
+      213: 1711653541032661539
+    second: waterenemy_35x35_39
+  - first:
+      213: 46835698060122460
+    second: waterenemy_35x35_40
+  - first:
+      213: 3712460334684821166
+    second: waterenemy_35x35_41
+  - first:
+      213: -4492073595092167576
+    second: waterenemy_35x35_42
+  - first:
+      213: -459890400617206271
+    second: waterenemy_35x35_43
+  - first:
+      213: -2952478669309019778
+    second: waterenemy_35x35_44
+  - first:
+      213: 6266137281548179673
+    second: waterenemy_35x35_45
+  - first:
+      213: -3031598612811084469
+    second: waterenemy_35x35_46
+  - first:
+      213: -124617258076100599
+    second: waterenemy_35x35_47
+  - first:
+      213: 767927474201009421
+    second: waterenemy_35x35_48
+  - first:
+      213: 8380847704591832231
+    second: waterenemy_35x35_49
+  - first:
+      213: 4612952990745898348
+    second: waterenemy_35x35_50
+  - first:
+      213: 6261862102661789053
+    second: waterenemy_35x35_51
+  - first:
+      213: 28092039595996405
+    second: waterenemy_35x35_52
+  - first:
+      213: 6732284478341338972
+    second: waterenemy_35x35_53
+  - first:
+      213: 3302764156941632788
+    second: waterenemy_35x35_54
+  - first:
+      213: -2223208771777248454
+    second: waterenemy_35x35_55
+  - first:
+      213: -2213923830234366434
+    second: waterenemy_35x35_56
+  - first:
+      213: -9100937112143633893
+    second: waterenemy_35x35_57
+  - first:
+      213: 1322036916654403060
+    second: waterenemy_35x35_58
+  - first:
+      213: 7234704321404400787
+    second: waterenemy_35x35_59
+  - first:
+      213: -6371717918961967944
+    second: waterenemy_35x35_60
+  - first:
+      213: 4720499601876028047
+    second: waterenemy_35x35_61
+  - first:
+      213: -3732523507471613426
+    second: waterenemy_35x35_62
+  - first:
+      213: -8533761501906511015
+    second: waterenemy_35x35_63
+  - first:
+      213: -4508177166000622385
+    second: waterenemy_35x35_64
+  - first:
+      213: -9102875018713930077
+    second: waterenemy_35x35_65
+  - first:
+      213: 6673131720732805316
+    second: waterenemy_35x35_66
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: waterenemy_35x35_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d5be2d32ed61e60800000000000000
+      internalID: 7932772039103569195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41e8019e1d7f2b80800000000000000
+      internalID: -8417371608296398513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9d42f863f8b4b40800000000000000
+      internalID: 5425587640590457256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230c7431a95e56c40800000000000000
+      internalID: 5505058569441493042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bf76d61e41d46e0800000000000000
+      internalID: -1851800913343677627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d1f6c7c64e19ff0800000000000000
+      internalID: -30992567819625159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59985245a9a14ed10800000000000000
+      internalID: 2153875771928971669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa7b0f182ee8b570800000000000000
+      internalID: 8482791754239277811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_8
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f33c3b21c5adb50800000000000000
+      internalID: 6618703837769449351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_9
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504142531599fa2d0800000000000000
+      internalID: -3265222630757362683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0398f042253e2a0800000000000000
+      internalID: -6709428705018957569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9e26c5ac894d380800000000000000
+      internalID: -8947358564777530957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35452fb2704445930800000000000000
+      internalID: 4131001555798348883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df170d13c62f2f80800000000000000
+      internalID: -8129236182932971568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341357abab7f959b0800000000000000
+      internalID: -5090765522401414845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_15
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8982992e2ec842410800000000000000
+      internalID: 1451439886012328088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0929bd0ce43d86220800000000000000
+      internalID: 2479463930063983248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_17
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bd783ae4b87ef00800000000000000
+      internalID: 1146037800056380178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7384230b6753e44c0800000000000000
+      internalID: -4301441810213746633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_19
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362655bdd42541ba0800000000000000
+      internalID: -6119175499343895965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0081dd9bc8fd9c3c0800000000000000
+      internalID: -4338690970488072192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_21
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca24f55393404da0800000000000000
+      internalID: -5962691606557218099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_22
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ab64abfddb2fea0800000000000000
+      internalID: -5840396998145557899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b92156c7f5d15c20800000000000000
+      internalID: 3193568870943238581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3129aba35912040800000000000000
+      internalID: 4621138772129616859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8616a97223d5d3ff0800000000000000
+      internalID: -54785150464401048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781e52b9ffc5e1d90800000000000000
+      internalID: -7125155307564179065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd137184dc4129a0800000000000000
+      internalID: -6259637531479695888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_28
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8691fcdce58bf6320800000000000000
+      internalID: 2553462231061698920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterenemy_35x35_29
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ec951676e650ac0800000000000000
+      internalID: -3889581312870592888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      waterenemy_35x35_0: 7932772039103569195
+      waterenemy_35x35_1: -8417371608296398513
+      waterenemy_35x35_10: -6709428705018957569
+      waterenemy_35x35_11: -8947358564777530957
+      waterenemy_35x35_12: 4131001555798348883
+      waterenemy_35x35_13: -8129236182932971568
+      waterenemy_35x35_14: -5090765522401414845
+      waterenemy_35x35_15: 1451439886012328088
+      waterenemy_35x35_16: 2479463930063983248
+      waterenemy_35x35_17: 1146037800056380178
+      waterenemy_35x35_18: -4301441810213746633
+      waterenemy_35x35_19: -6119175499343895965
+      waterenemy_35x35_2: 5425587640590457256
+      waterenemy_35x35_20: -4338690970488072192
+      waterenemy_35x35_21: -5962691606557218099
+      waterenemy_35x35_22: -5840396998145557899
+      waterenemy_35x35_23: 3193568870943238581
+      waterenemy_35x35_24: 4621138772129616859
+      waterenemy_35x35_25: -54785150464401048
+      waterenemy_35x35_26: -7125155307564179065
+      waterenemy_35x35_27: -6259637531479695888
+      waterenemy_35x35_28: 2553462231061698920
+      waterenemy_35x35_29: -3889581312870592888
+      waterenemy_35x35_3: 5505058569441493042
+      waterenemy_35x35_4: -1851800913343677627
+      waterenemy_35x35_5: -30992567819625159
+      waterenemy_35x35_6: 2153875771928971669
+      waterenemy_35x35_7: 8482791754239277811
+      waterenemy_35x35_8: 6618703837769449351
+      waterenemy_35x35_9: -3265222630757362683
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
