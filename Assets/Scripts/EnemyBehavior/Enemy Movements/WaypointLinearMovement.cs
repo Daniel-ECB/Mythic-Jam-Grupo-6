@@ -4,37 +4,40 @@ public class WaypointLinearMovement : MonoBehaviour, IEnemyMovement
 {
     [SerializeField] private float[] arrayX;
     [SerializeField] private float[] arrayY;
-    private int currentIndex = 0;
+    [SerializeField] private float tolerance = 0.1f;
 
+    private int currentIndex = 0;
     public EnemyMovementController enemyMovementScript { get; set; }
 
-    private void Start()
+    void Start()
     {
-        if (arrayX.Length != arrayY.Length)
+        if (enemyMovementScript == null)
         {
-            Debug.LogWarning("WaypointLinearMovement: arrayX and arrayY must be of the same length.");
+            enemyMovementScript = GetComponent<EnemyMovementController>();
         }
     }
 
     public void Move(Transform enemyTransform)
     {
-        if (arrayX.Length == 0 || arrayY.Length == 0 || currentIndex >= arrayX.Length)
-            return;
+        if (arrayX.Length == 0 || arrayY.Length == 0) return;
 
-        Vector3 target = new Vector3(arrayX[currentIndex], arrayY[currentIndex], enemyTransform.position.z);
-        Vector3 direction = (target - enemyTransform.position).normalized;
+        int length = Mathf.Min(arrayX.Length, arrayY.Length);
+        if (length == 0 || currentIndex >= length) return;
 
-        float step = enemyMovementScript != null ? enemyMovementScript.Speed * Time.deltaTime : 0f;
-        enemyTransform.position += direction * step;
+        Vector3 targetPosition = new Vector3(arrayX[currentIndex], arrayY[currentIndex], enemyTransform.position.z);
+        float speed = enemyMovementScript != null ? enemyMovementScript.Speed : 1f;
 
-        if (Vector3.Distance(enemyTransform.position, target) < 0.1f)
+        enemyTransform.position = Vector3.MoveTowards(enemyTransform.position, targetPosition, speed * Time.deltaTime);
+
+        if (Vector3.Distance(enemyTransform.position, targetPosition) < tolerance)
         {
             currentIndex++;
-            if (currentIndex >= arrayX.Length)
+            if (currentIndex >= length)
             {
                 currentIndex = 0; 
             }
         }
     }
 }
+
 

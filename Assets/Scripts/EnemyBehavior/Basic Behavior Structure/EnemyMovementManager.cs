@@ -11,7 +11,7 @@ public class EnemyMovementController : MonoBehaviour
     [SerializeField] private float delayBeforeMove;
     [SerializeField] private bool isMoving;
     private float delayTimer = 0f;
-    private bool canMove = false;
+    private bool canMove = true;
     private Vector3 lastPosition;
     private SpriteRenderer spriteRenderer;
     [SerializeField] Animator animator;
