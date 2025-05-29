@@ -12,6 +12,8 @@ public class EnemyAttackController : MonoBehaviour
     [SerializeField] private AnimationClip loopAttackAnimation;
     private int currentAttackIndex = 0;
     private bool isAttacking = false;
+    public Vector2 LastMovementDirection { get; set; }
+
     void Start()
     {
         enemyRenderer = GetComponent<Renderer>();
