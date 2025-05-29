@@ -33,7 +33,7 @@ public class BulletPoolEditor : Editor
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField(type.ToString(), GUILayout.Width(100));
-            entry.bulletPrefab = (GameObject)EditorGUILayout.ObjectField(entry.bulletPrefab, typeof(GameObject), false);
+            entry.bulletPrefab = (BulletBehaviour)EditorGUILayout.ObjectField(entry.bulletPrefab, typeof(BulletBehaviour), false);
             EditorGUILayout.EndHorizontal();
 
             if (index >= 0)

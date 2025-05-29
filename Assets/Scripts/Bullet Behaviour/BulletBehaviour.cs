@@ -11,6 +11,15 @@ public class BulletBehaviour : MonoBehaviour
         timer = 0f;
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player") && !other.CompareTag("Bullet"))
+        {
+            
+            gameObject.SetActive(false);
+        }
+    }
+
     void Update()
     {
         transform.Translate(Vector2.up * speed * Time.deltaTime);

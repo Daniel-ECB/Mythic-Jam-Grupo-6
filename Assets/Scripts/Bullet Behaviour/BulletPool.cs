@@ -9,37 +9,39 @@ public class BulletPool : MonoBehaviour
     public struct BulletPrefabByType
     {
         public BulletType bulletType;
-        public GameObject bulletPrefab;
+        public BulletBehaviour bulletPrefab;
     }
+
 
     public List<BulletPrefabByType> bulletPrefabs;
 
-    private Dictionary<BulletType, Queue<GameObject>> poolDictionary;
+    private Dictionary<BulletType, Queue<BulletBehaviour>> poolDictionary;
+
 
     void Awake()
     {
         Instance = this;
-        poolDictionary = new Dictionary<BulletType, Queue<GameObject>>();
+        poolDictionary = new Dictionary<BulletType, Queue<BulletBehaviour>>();
 
         foreach (var bullet in bulletPrefabs)
         {
-            Queue<GameObject> queue = new Queue<GameObject>();
+            Queue<BulletBehaviour> queue = new Queue<BulletBehaviour>();
             for (int i = 0; i < 10; i++)
             {
-                GameObject obj = Instantiate(bullet.bulletPrefab);
-                obj.SetActive(false);
+                BulletBehaviour obj = Instantiate(bullet.bulletPrefab);
+                obj.gameObject.SetActive(false);
                 queue.Enqueue(obj);
             }
             poolDictionary.Add(bullet.bulletType, queue);
         }
     }
 
-    public GameObject SpawnBullet(BulletType type, Vector3 position, Quaternion rotation)
+    public BulletBehaviour SpawnBullet(BulletType type, Vector3 position, Quaternion rotation)
     {
-        GameObject bullet;
+        BulletBehaviour bullet;
 
         var queue = poolDictionary[type];
-        if (queue.Count > 0 && !queue.Peek().activeInHierarchy)
+        if (queue.Count > 0 && !queue.Peek().gameObject.activeInHierarchy)
         {
             bullet = queue.Dequeue();
         }
@@ -50,17 +52,18 @@ public class BulletPool : MonoBehaviour
 
         bullet.transform.position = position;
         bullet.transform.rotation = rotation;
-        bullet.SetActive(true);
+        bullet.gameObject.SetActive(true);
         queue.Enqueue(bullet);
 
         return bullet;
     }
 
-    GameObject GetPrefabByType(BulletType type)
-    {
-        foreach (var b in bulletPrefabs)
-            if (b.bulletType == type)
-                return b.bulletPrefab;
-        return null;
-    }
+BulletBehaviour GetPrefabByType(BulletType type)
+{
+    foreach (var b in bulletPrefabs)
+        if (b.bulletType == type)
+            return b.bulletPrefab;
+    return null;
+}
+
 }

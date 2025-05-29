@@ -256,61 +256,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &559916168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 559916170}
-  - component: {fileID: 559916169}
-  m_Layer: 0
-  m_Name: BulletPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &559916169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559916168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60917b3a8ef68c143ad2a7c62c5ae1a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefabs:
-  - bulletType: 0
-    bulletPrefab: {fileID: 6807986711891665484, guid: 2377a21d6de691245b94119e4704948d, type: 3}
-  - bulletType: 1
-    bulletPrefab: {fileID: 7711871909665865949, guid: b4cadce0d8f8ab54b8703937547b1451, type: 3}
-  - bulletType: 2
-    bulletPrefab: {fileID: 5306914223691613622, guid: a7fb4ff0e3bb1214681b89b4fba51019, type: 3}
-  - bulletType: 3
-    bulletPrefab: {fileID: 5945203034366795618, guid: b753b886b47094b4daa95c9df8f6dc10, type: 3}
-  - bulletType: 4
-    bulletPrefab: {fileID: 432607026781066402, guid: 2a87bdb251980154e8aac325b0f0a740, type: 3}
---- !u!4 &559916170
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559916168}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,4 +346,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 559916170}
