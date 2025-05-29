@@ -1,11 +1,10 @@
+using MythicGameJam.Core.Utils;
 using UnityEngine;
 
 namespace MythicGameJam.Core.GameManagement
 {
-    public sealed class GameManager : MonoBehaviour
+    public sealed class GameManager : Singleton<GameManager>
     {
-        public static GameManager Instance { get; private set; }
-
         private IGameState _currentState;
 
         // State references
@@ -14,16 +13,9 @@ namespace MythicGameJam.Core.GameManagement
         private PauseState _pauseState;
         private LoadingState _loadingState;
 
-        private void Awake()
+        protected override void Awake()
         {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+            base.Awake();
 
             // Instantiate states (pass GameManager or other dependencies as needed)
             _homeScreenState = new HomeScreenState(this);
