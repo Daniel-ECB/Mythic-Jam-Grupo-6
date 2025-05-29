@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6459276474149828301}
   - component: {fileID: 6409844019569152135}
   - component: {fileID: 746729557174939531}
+  - component: {fileID: 1028543882327298460}
   m_Layer: 0
   m_Name: CornamentaProjectile
   m_TagString: Untagged
@@ -110,3 +111,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1028543882327298460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7711871909665865949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e968fdcf8f735b42bccded07e9c7af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  lifeTime: 3

@@ -1,53 +1,66 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class BulletPool : MonoBehaviour
 {
-    public static BulletPool instance;
+    public static BulletPool Instance;
 
-    public GameObject bulletPrefab;
-    [SerializeField]public int poolSize = 50;
-
-    private Queue<GameObject> pool = new Queue<GameObject>();
-
-    private void Awake()
+    [System.Serializable]
+    public struct BulletPrefabByType
     {
-        instance = this;
-
-        for (int i = 0; i < poolSize; i++)
-        {
-            GameObject bullet = Instantiate(bulletPrefab);
-            bullet.SetActive(false);
-            pool.Enqueue(bullet);
-        }
-
+        public BulletType bulletType;
+        public GameObject bulletPrefab;
     }
 
-    public GameObject GetBullet(Vector2 position, float angle)
+    public List<BulletPrefabByType> bulletPrefabs;
+
+    private Dictionary<BulletType, Queue<GameObject>> poolDictionary;
+
+    void Awake()
+    {
+        Instance = this;
+        poolDictionary = new Dictionary<BulletType, Queue<GameObject>>();
+
+        foreach (var bullet in bulletPrefabs)
+        {
+            Queue<GameObject> queue = new Queue<GameObject>();
+            for (int i = 0; i < 10; i++)
+            {
+                GameObject obj = Instantiate(bullet.bulletPrefab);
+                obj.SetActive(false);
+                queue.Enqueue(obj);
+            }
+            poolDictionary.Add(bullet.bulletType, queue);
+        }
+    }
+
+    public GameObject SpawnBullet(BulletType type, Vector3 position, Quaternion rotation)
     {
         GameObject bullet;
 
-        if (pool.Count > 0)
+        var queue = poolDictionary[type];
+        if (queue.Count > 0 && !queue.Peek().activeInHierarchy)
         {
-            bullet = pool.Dequeue();
+            bullet = queue.Dequeue();
         }
         else
         {
-            bullet = Instantiate(bulletPrefab);
+            bullet = Instantiate(GetPrefabByType(type));
         }
 
-        
-        bullet.transform.position = new Vector3(position.x, position.y, 0f);
-        bullet.transform.rotation = Quaternion.Euler(0f, 0f, angle);
-
+        bullet.transform.position = position;
+        bullet.transform.rotation = rotation;
         bullet.SetActive(true);
+        queue.Enqueue(bullet);
+
         return bullet;
     }
 
-    public void ReturnBullet(GameObject bullet)
+    GameObject GetPrefabByType(BulletType type)
     {
-        bullet.SetActive(false);
-        pool.Enqueue(bullet);
+        foreach (var b in bulletPrefabs)
+            if (b.bulletType == type)
+                return b.bulletPrefab;
+        return null;
     }
-
 }

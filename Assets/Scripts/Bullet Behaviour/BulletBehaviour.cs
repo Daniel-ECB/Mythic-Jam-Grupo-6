@@ -2,39 +2,20 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
-    public float speed = 5f;
-    public float lifetime = 3f;
+    public float speed = 10f;
+    public float lifeTime = 3f;
+    private float timer;
 
-    private Vector2 direction;
-    private Rigidbody2D rb;
-
-    private void Awake()
+    void OnEnable()
     {
-        rb = GetComponent<Rigidbody2D>();
+        timer = 0f;
     }
 
-    public void SetDirection(Vector2 dir)
+    void Update()
     {
-        direction = dir.normalized;
-    }
-
-    private void OnEnable()
-    {
-        rb.linearVelocity = direction * speed;
-
-        
-        Invoke(nameof(ReturnToPool), lifetime);
-    }
-
-    private void OnDisable()
-    {
-        rb.linearVelocity = Vector2.zero;
-        CancelInvoke();
-    }
-
-    private void ReturnToPool()
-    {
-        BulletPool.instance.ReturnBullet(gameObject);
+        transform.Translate(Vector2.up * speed * Time.deltaTime);
+        timer += Time.deltaTime;
+        if (timer >= lifeTime)
+            gameObject.SetActive(false);
     }
 }
-
