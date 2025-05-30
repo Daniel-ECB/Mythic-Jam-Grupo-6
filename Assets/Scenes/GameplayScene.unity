@@ -714,6 +714,7 @@ MonoBehaviour:
   _dontDestroyOnLoad: 0
   _pauseMenu: {fileID: 150945516}
   _victoryMenu: {fileID: 1309967269}
+  _gameplayClip: {fileID: 8300000, guid: aff6abac23366854a8df879d875b7420, type: 3}
 --- !u!1001 &1880507673
 PrefabInstance:
   m_ObjectHideFlags: 0
