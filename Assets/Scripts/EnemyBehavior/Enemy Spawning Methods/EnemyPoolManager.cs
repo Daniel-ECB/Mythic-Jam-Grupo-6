@@ -1,72 +1,56 @@
 using System.Collections.Generic;
 using UnityEngine;
+using MythicGameJam.Core.Utils;
 
-public class EnemyPoolManager : MonoBehaviour
+namespace MythicGameJam.Enemies
 {
-    [SerializeField] private GameObject[] enemyPrefabs;
-    [SerializeField] private int initialPoolSize = 10;
-
-    private Dictionary<GameObject, List<GameObject>> enemyPools = new Dictionary<GameObject, List<GameObject>>();
-
-    public static EnemyPoolManager Instance { get; private set; }
-
-    void Awake()
+    public sealed class EnemyPoolManager : Singleton<EnemyPoolManager>
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
-    }
+        [SerializeField]
+        private GameObject enemyPrefab;
 
-    void Start()
-    {
-        foreach (GameObject prefab in enemyPrefabs)
+        [SerializeField]
+        private int initialPoolSize = 10;
+
+        private List<GameObject> enemyPool = new List<GameObject>();
+
+        protected override void Awake()
         {
-            if (!enemyPools.ContainsKey(prefab))
-            {
-                enemyPools[prefab] = new List<GameObject>();
+            base.Awake();
+        }
 
-                for (int i = 0; i < initialPoolSize; i++)
+        private void Start()
+        {
+            for (int i = 0; i < initialPoolSize; i++)
+            {
+                GameObject enemy = Instantiate(enemyPrefab, transform);
+                enemy.SetActive(false);
+                enemyPool.Add(enemy);
+            }
+        }
+
+        public GameObject GetEnemy(Vector3 spawnPosition)
+        {
+            foreach (GameObject enemy in enemyPool)
+            {
+                if (!enemy.activeInHierarchy)
                 {
-                    GameObject enemy = Instantiate(prefab, transform);
-                    enemy.SetActive(false);
-                    enemyPools[prefab].Add(enemy);
+                    enemy.transform.position = spawnPosition;
+                    enemy.SetActive(true);
+                    enemy.GetComponent<Enemy>().ResetEnemy();
+                    return enemy;
                 }
             }
-        }
-    }
 
-    public GameObject GetEnemy(Vector3 spawnPosition)
-    {
-        if (enemyPrefabs.Length == 0)
+            GameObject newEnemy = Instantiate(enemyPrefab, transform);
+            newEnemy.SetActive(false);
+            enemyPool.Add(newEnemy);
+            return GetEnemy(spawnPosition);
+        }
+
+        public void ReturnToPool(GameObject enemy)
         {
-            Debug.LogWarning("No enemy prefabs assigned to EnemyPoolManager.");
-            return null;
+            enemy.SetActive(false);
         }
-
-        GameObject selectedPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
-
-        foreach (GameObject enemy in enemyPools[selectedPrefab])
-        {
-            if (!enemy.activeInHierarchy)
-            {
-                enemy.transform.position = spawnPosition;
-                enemy.SetActive(true);
-                enemy.GetComponent<Enemy>().ResetEnemy();
-                return enemy;
-            }
-        }
-
-        GameObject newEnemy = Instantiate(selectedPrefab, transform);
-        newEnemy.SetActive(false);
-        enemyPools[selectedPrefab].Add(newEnemy);
-        return GetEnemy(spawnPosition); 
-    }
-
-    public void ReturnToPool(GameObject enemy)
-    {
-        enemy.SetActive(false);
     }
 }
-
-

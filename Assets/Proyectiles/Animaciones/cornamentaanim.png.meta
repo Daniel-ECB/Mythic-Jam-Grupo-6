@@ -1,0 +1,1716 @@
+fileFormatVersion: 2
+guid: 4f3b0617402a3874e9da77b4d2f5d9ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5354461968437003874
+    second: cornamentaanim_0
+  - first:
+      213: 4027317590574057157
+    second: cornamentaanim_1
+  - first:
+      213: 5977792580001781797
+    second: cornamentaanim_2
+  - first:
+      213: 1333115165978369313
+    second: cornamentaanim_3
+  - first:
+      213: -7580993118015612769
+    second: cornamentaanim_4
+  - first:
+      213: -7420743816549938386
+    second: cornamentaanim_5
+  - first:
+      213: -638749390874052138
+    second: cornamentaanim_6
+  - first:
+      213: 2110852774336444051
+    second: cornamentaanim_7
+  - first:
+      213: 982759444291198052
+    second: cornamentaanim_8
+  - first:
+      213: -8715994429403638037
+    second: cornamentaanim_9
+  - first:
+      213: -8476634218159808480
+    second: cornamentaanim_10
+  - first:
+      213: 3454745913380792921
+    second: cornamentaanim_11
+  - first:
+      213: 3975120006201269103
+    second: cornamentaanim_12
+  - first:
+      213: -1707431990259559032
+    second: cornamentaanim_13
+  - first:
+      213: 2836400654613710088
+    second: cornamentaanim_14
+  - first:
+      213: -3095165552591416625
+    second: cornamentaanim_15
+  - first:
+      213: -8082224888841212861
+    second: cornamentaanim_16
+  - first:
+      213: -4101933075718472452
+    second: cornamentaanim_17
+  - first:
+      213: 6626739273875443861
+    second: cornamentaanim_18
+  - first:
+      213: 1949331772501520994
+    second: cornamentaanim_19
+  - first:
+      213: -1672110329645553918
+    second: cornamentaanim_20
+  - first:
+      213: -975881198678139914
+    second: cornamentaanim_21
+  - first:
+      213: -307538943544297602
+    second: cornamentaanim_22
+  - first:
+      213: -6513840778833105494
+    second: cornamentaanim_23
+  - first:
+      213: 4975058046876298266
+    second: cornamentaanim_24
+  - first:
+      213: -6071264430799755165
+    second: cornamentaanim_25
+  - first:
+      213: -7898968071552668906
+    second: cornamentaanim_26
+  - first:
+      213: 1573147330697133902
+    second: cornamentaanim_27
+  - first:
+      213: -1068895887603198426
+    second: cornamentaanim_28
+  - first:
+      213: -4291021107808270425
+    second: cornamentaanim_29
+  - first:
+      213: 3923005512590153715
+    second: cornamentaanim_30
+  - first:
+      213: -5420376368979299450
+    second: cornamentaanim_31
+  - first:
+      213: -3003314900219442701
+    second: cornamentaanim_32
+  - first:
+      213: 2801577126769399916
+    second: cornamentaanim_33
+  - first:
+      213: -1587006039076122709
+    second: cornamentaanim_34
+  - first:
+      213: 670548514654140532
+    second: cornamentaanim_35
+  - first:
+      213: 7079579477910546229
+    second: cornamentaanim_36
+  - first:
+      213: 8067000274328306786
+    second: cornamentaanim_37
+  - first:
+      213: 8854637832838096518
+    second: cornamentaanim_38
+  - first:
+      213: -4089189045189933878
+    second: cornamentaanim_39
+  - first:
+      213: 4945734534681545972
+    second: cornamentaanim_40
+  - first:
+      213: -7388589451290897147
+    second: cornamentaanim_41
+  - first:
+      213: 1817092339023357158
+    second: cornamentaanim_42
+  - first:
+      213: -4368921422437169250
+    second: cornamentaanim_43
+  - first:
+      213: 2969387885099911361
+    second: cornamentaanim_44
+  - first:
+      213: -8627929824733815431
+    second: cornamentaanim_45
+  - first:
+      213: -2195810624249523899
+    second: cornamentaanim_46
+  - first:
+      213: -7656462435216724761
+    second: cornamentaanim_47
+  - first:
+      213: 558947111576344561
+    second: cornamentaanim_48
+  - first:
+      213: -4097977234441258774
+    second: cornamentaanim_49
+  - first:
+      213: -5016547114346776309
+    second: cornamentaanim_50
+  - first:
+      213: 3465695592716874142
+    second: cornamentaanim_51
+  - first:
+      213: -4380390008905328370
+    second: cornamentaanim_52
+  - first:
+      213: -3271098317013929979
+    second: cornamentaanim_53
+  - first:
+      213: 756067926867089391
+    second: cornamentaanim_54
+  - first:
+      213: 3719877648225132302
+    second: cornamentaanim_55
+  - first:
+      213: -6750685004551815950
+    second: cornamentaanim_56
+  - first:
+      213: 2872057038329962493
+    second: cornamentaanim_57
+  - first:
+      213: 2053950390561093087
+    second: cornamentaanim_58
+  - first:
+      213: -6106472770938575303
+    second: cornamentaanim_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cornamentaanim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 245
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266c6088acede4a40800000000000000
+      internalID: 5354461968437003874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 245
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c649dfc208e3e730800000000000000
+      internalID: 4027317590574057157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 245
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528d8f70ea265f250800000000000000
+      internalID: 5977792580001781797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 245
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d93d82e2d208210800000000000000
+      internalID: 1333115165978369313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 245
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f989ffbcce6eac690800000000000000
+      internalID: -7580993118015612769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 245
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b4d5dc0d8340990800000000000000
+      internalID: -7420743816549938386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 245
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d9747030d4b227f0800000000000000
+      internalID: -638749390874052138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_7
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 245
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396b87b1a614b4d10800000000000000
+      internalID: 2110852774336444051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c13a8f18673ad00800000000000000
+      internalID: 982759444291198052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6dc1bee319a0780800000000000000
+      internalID: -8715994429403638037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020e9a7f612fc5a80800000000000000
+      internalID: -8476634218159808480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_11
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a6b4caa19b1ff20800000000000000
+      internalID: 3454745913380792921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_12
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bdc25a5967a2730800000000000000
+      internalID: 3975120006201269103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885d076b6abfd48e0800000000000000
+      internalID: -1707431990259559032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8058fe21e5bec5720800000000000000
+      internalID: 2836400654613710088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_15
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc253cc2453cb05d0800000000000000
+      internalID: -3095165552591416625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c6cc9f84b26df80800000000000000
+      internalID: -8082224888841212861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcff51c9910317c0800000000000000
+      internalID: -4101933075718472452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590d9767248e6fb50800000000000000
+      internalID: 6626739273875443861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262f5594bea6d0b10800000000000000
+      internalID: 1949331772501520994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_20
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2072730b3887bc8e0800000000000000
+      internalID: -1672110329645553918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb9ec16839f472f0800000000000000
+      internalID: -975881198678139914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_22
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e777173d5f66bbbf0800000000000000
+      internalID: -307538943544297602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_23
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 175
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aade23ec2503a95a0800000000000000
+      internalID: -6513840778833105494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ca2054fe4fa0540800000000000000
+      internalID: 4975058046876298266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36867b8ca298ebba0800000000000000
+      internalID: -6071264430799755165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b63f2b36a316290800000000000000
+      internalID: -7898968071552668906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f7e819921f4d510800000000000000
+      internalID: 1573147330697133902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_28
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626198d7ad48a21f0800000000000000
+      internalID: -1068895887603198426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_29
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a78269890b3374c0800000000000000
+      internalID: -4291021107808270425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_30
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7d5dd8ab0517630800000000000000
+      internalID: 3923005512590153715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_31
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 140
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683311a2964f6c4b0800000000000000
+      internalID: -5420376368979299450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f948cfa2051256d0800000000000000
+      internalID: -3003314900219442701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_33
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6813fbad8331e620800000000000000
+      internalID: 2801577126769399916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_34
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafc7707a62d9f9e0800000000000000
+      internalID: -1587006039076122709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_35
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47830a442544e4900800000000000000
+      internalID: 670548514654140532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_36
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537e004a608bf3260800000000000000
+      internalID: 7079579477910546229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_37
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264415a320eb3ff60800000000000000
+      internalID: 8067000274328306786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_38
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686ac01f13ef1ea70800000000000000
+      internalID: 8854637832838096518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_39
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 105
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac409069a384047c0800000000000000
+      internalID: -4089189045189933878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc431d0b57c2a440800000000000000
+      internalID: 4945734534681545972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_41
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5059b9c5a05767990800000000000000
+      internalID: -7388589451290897147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_42
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4229fdadb973910800000000000000
+      internalID: 1817092339023357158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_43
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97c9042d197e53c0800000000000000
+      internalID: -4368921422437169250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_44
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c88abb8c82653920800000000000000
+      internalID: 2969387885099911361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_45
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d1eb1898f634880800000000000000
+      internalID: -8627929824733815431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_46
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54114930fd9e681e0800000000000000
+      internalID: -2195810624249523899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_47
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 70
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ece8c81bf7ceb590800000000000000
+      internalID: -7656462435216724761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f71db1cf67c1c700800000000000000
+      internalID: 558947111576344561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_49
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8bd73da6f0127c0800000000000000
+      internalID: -4097977234441258774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_50
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0979527af4a16ab0800000000000000
+      internalID: -5016547114346776309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_51
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91b68f87cf981030800000000000000
+      internalID: 3465695592716874142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_52
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e091785ce7ab533c0800000000000000
+      internalID: -4380390008905328370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_53
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500b1056969ba92d0800000000000000
+      internalID: -3271098317013929979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_54
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe79afe06c71e7a00800000000000000
+      internalID: 756067926867089391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_55
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 35
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0fdf562309af9330800000000000000
+      internalID: 3719877648225132302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcf12941cfb052a0800000000000000
+      internalID: -6750685004551815950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_57
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff5158d8a89bd720800000000000000
+      internalID: 2872057038329962493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_58
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd53ba77ff8118c10800000000000000
+      internalID: 2053950390561093087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cornamentaanim_59
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9366c994e53714ba0800000000000000
+      internalID: -6106472770938575303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cornamentaanim_0: 5354461968437003874
+      cornamentaanim_1: 4027317590574057157
+      cornamentaanim_10: -8476634218159808480
+      cornamentaanim_11: 3454745913380792921
+      cornamentaanim_12: 3975120006201269103
+      cornamentaanim_13: -1707431990259559032
+      cornamentaanim_14: 2836400654613710088
+      cornamentaanim_15: -3095165552591416625
+      cornamentaanim_16: -8082224888841212861
+      cornamentaanim_17: -4101933075718472452
+      cornamentaanim_18: 6626739273875443861
+      cornamentaanim_19: 1949331772501520994
+      cornamentaanim_2: 5977792580001781797
+      cornamentaanim_20: -1672110329645553918
+      cornamentaanim_21: -975881198678139914
+      cornamentaanim_22: -307538943544297602
+      cornamentaanim_23: -6513840778833105494
+      cornamentaanim_24: 4975058046876298266
+      cornamentaanim_25: -6071264430799755165
+      cornamentaanim_26: -7898968071552668906
+      cornamentaanim_27: 1573147330697133902
+      cornamentaanim_28: -1068895887603198426
+      cornamentaanim_29: -4291021107808270425
+      cornamentaanim_3: 1333115165978369313
+      cornamentaanim_30: 3923005512590153715
+      cornamentaanim_31: -5420376368979299450
+      cornamentaanim_32: -3003314900219442701
+      cornamentaanim_33: 2801577126769399916
+      cornamentaanim_34: -1587006039076122709
+      cornamentaanim_35: 670548514654140532
+      cornamentaanim_36: 7079579477910546229
+      cornamentaanim_37: 8067000274328306786
+      cornamentaanim_38: 8854637832838096518
+      cornamentaanim_39: -4089189045189933878
+      cornamentaanim_4: -7580993118015612769
+      cornamentaanim_40: 4945734534681545972
+      cornamentaanim_41: -7388589451290897147
+      cornamentaanim_42: 1817092339023357158
+      cornamentaanim_43: -4368921422437169250
+      cornamentaanim_44: 2969387885099911361
+      cornamentaanim_45: -8627929824733815431
+      cornamentaanim_46: -2195810624249523899
+      cornamentaanim_47: -7656462435216724761
+      cornamentaanim_48: 558947111576344561
+      cornamentaanim_49: -4097977234441258774
+      cornamentaanim_5: -7420743816549938386
+      cornamentaanim_50: -5016547114346776309
+      cornamentaanim_51: 3465695592716874142
+      cornamentaanim_52: -4380390008905328370
+      cornamentaanim_53: -3271098317013929979
+      cornamentaanim_54: 756067926867089391
+      cornamentaanim_55: 3719877648225132302
+      cornamentaanim_56: -6750685004551815950
+      cornamentaanim_57: 2872057038329962493
+      cornamentaanim_58: 2053950390561093087
+      cornamentaanim_59: -6106472770938575303
+      cornamentaanim_6: -638749390874052138
+      cornamentaanim_7: 2110852774336444051
+      cornamentaanim_8: 982759444291198052
+      cornamentaanim_9: -8715994429403638037
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

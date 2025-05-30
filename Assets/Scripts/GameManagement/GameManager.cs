@@ -1,11 +1,10 @@
+using MythicGameJam.Core.Utils;
 using UnityEngine;
 
 namespace MythicGameJam.Core.GameManagement
 {
-    public sealed class GameManager : MonoBehaviour
+    public sealed class GameManager : Singleton<GameManager>
     {
-        public static GameManager Instance { get; private set; }
-
         private IGameState _currentState;
 
         // State references
@@ -14,16 +13,20 @@ namespace MythicGameJam.Core.GameManagement
         private PauseState _pauseState;
         private LoadingState _loadingState;
 
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
+        private bool _isPaused = false;
 
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+        [SerializeField]
+        private string _debugCurrentState; // This is only for debug purposes, can be removed in production
+
+        public bool IsPaused
+        {
+            get => _isPaused; 
+            set => _isPaused = value;
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
 
             // Instantiate states (pass GameManager or other dependencies as needed)
             _homeScreenState = new HomeScreenState(this);
@@ -38,13 +41,14 @@ namespace MythicGameJam.Core.GameManagement
             _currentState?.Update();
         }
 
-        public void ChangeState(IGameState newState)
+        private void ChangeState(IGameState newState)
         {
             if (_currentState == newState)
                 return;
 
             _currentState?.Exit();
             _currentState = newState;
+            _debugCurrentState = newState.GetType().Name;
             _currentState?.Enter();
         }
 
@@ -52,18 +56,10 @@ namespace MythicGameJam.Core.GameManagement
         public void StartGameplay() => ChangeState(_gameplayState);
         public void PauseGame() => ChangeState(_pauseState);
 
-        public void LoadScene(string sceneName)
+        public void LoadScene(string sceneName, System.Action onLoaded)
         {
-            _loadingState = new LoadingState(this, sceneName);
+            _loadingState = new LoadingState(this, sceneName, onLoaded);
             ChangeState(_loadingState);
-        }
-
-        public void QuitGame()
-        {
-            Application.Quit();
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#endif
         }
     }
 }

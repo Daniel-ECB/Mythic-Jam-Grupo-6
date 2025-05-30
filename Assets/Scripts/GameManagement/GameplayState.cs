@@ -1,25 +1,35 @@
-using MythicGameJam.Core.GameManagement;
+using MythicGameJam.Input;
 
-public sealed class GameplayState : IGameState
+namespace MythicGameJam.Core.GameManagement
 {
-    private readonly GameManager _gameManager;
-    public GameplayState(GameManager gameManager)
+    public sealed class GameplayState : IGameState
     {
-        _gameManager = gameManager;
-    }
+        private readonly GameManager _gameManager;
 
-    public void Enter()
-    {
-        // Start gameplay, initialize game objects, etc.
-    }
+        public GameplayState(GameManager gameManager)
+        {
+            _gameManager = gameManager;
+        }
 
-    public void Exit()
-    {
-        // Pause gameplay, save state, etc.
-    }
+        public void Enter()
+        {
+            InputManager.Instance.OnPause += HandlePause;
+        }
 
-    public void Update()
-    {
-        // Handle gameplay logic, player input, etc.
+        public void Exit()
+        {
+            if (InputManager.Instance != null)
+                InputManager.Instance.OnPause -= HandlePause;
+        }
+
+        public void Update()
+        {
+            // Handle gameplay logic, player input, etc.
+        }
+
+        private void HandlePause()
+        {
+            _gameManager.PauseGame();
+        }
     }
 }
