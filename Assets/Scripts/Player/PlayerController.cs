@@ -11,17 +11,12 @@ namespace MythicGameJam.Player
         private PlayerStats _stats;
         [SerializeField]
         private Rigidbody2D _rigidbody2D;
-        [SerializeField]
-        private SpriteRenderer _spriteRenderer;
 
         private Vector2 _moveInput;
         private Camera _mainCamera;
 
         private void Awake()
         {
-            if (_spriteRenderer && _stats)
-                _spriteRenderer.sprite = _stats.playerSprite;
-
             _rigidbody2D.linearDamping = _stats.linearDamping;
             _mainCamera = Camera.main;
         }

@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 675121599936709800}
   - component: {fileID: 7657056007520488147}
   - component: {fileID: 4951844972388200063}
+  - component: {fileID: 2963417915050436236}
   - component: {fileID: 4768703160610524614}
   - component: {fileID: 7148125848754032700}
+  - component: {fileID: 5497790161493575104}
   m_Layer: 0
   m_Name: Player_Human
   m_TagString: Player
@@ -164,6 +166,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &2963417915050436236
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4718788424193436229}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &4768703160610524614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,5 +215,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67a0887c724987c45b92d81d59c35c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
   _margin: {x: 0.5, y: 0.5}
+--- !u!114 &5497790161493575104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4718788424193436229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f873251e5aedc439f08ab24656d67e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats: {fileID: 11400000, guid: 9a30982854582424491ae29c8e38a986, type: 2}
+  _animator: {fileID: 2963417915050436236}

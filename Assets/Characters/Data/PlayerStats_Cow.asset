@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: PlayerStats_Cow
   m_EditorClassIdentifier: 
   moveSpeed: 80
-  acceleration: 35
+  acceleration: 30
+  linearDamping: 5
   projectilePrefab: {fileID: 0}
   playerSprite: {fileID: 21300000, guid: 72824294c732f1a4d9389ab58ab941f7, type: 3}
+  animatorController: {fileID: 9100000, guid: 0e55352faa715de46bb9048d2929e88c, type: 2}
