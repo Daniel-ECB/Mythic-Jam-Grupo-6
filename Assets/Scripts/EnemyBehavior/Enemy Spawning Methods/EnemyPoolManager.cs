@@ -7,7 +7,7 @@ namespace MythicGameJam.Enemies
     public sealed class EnemyPoolManager : Singleton<EnemyPoolManager>
     {
         [SerializeField]
-        private GameObject enemyPrefab;
+        private GameObject[] enemyPrefabs;
 
         [SerializeField]
         private int initialPoolSize = 10;
@@ -23,7 +23,8 @@ namespace MythicGameJam.Enemies
         {
             for (int i = 0; i < initialPoolSize; i++)
             {
-                GameObject enemy = Instantiate(enemyPrefab, transform);
+                GameObject prefab = GetRandomEnemyPrefab();
+                GameObject enemy = Instantiate(prefab, transform);
                 enemy.SetActive(false);
                 enemyPool.Add(enemy);
             }
@@ -42,7 +43,8 @@ namespace MythicGameJam.Enemies
                 }
             }
 
-            GameObject newEnemy = Instantiate(enemyPrefab, transform);
+            GameObject prefab = GetRandomEnemyPrefab();
+            GameObject newEnemy = Instantiate(prefab, transform);
             newEnemy.SetActive(false);
             enemyPool.Add(newEnemy);
             return GetEnemy(spawnPosition);
@@ -52,5 +54,17 @@ namespace MythicGameJam.Enemies
         {
             enemy.SetActive(false);
         }
+
+        private GameObject GetRandomEnemyPrefab()
+        {
+            if (enemyPrefabs == null || enemyPrefabs.Length == 0)
+            {
+                Debug.LogError("EnemyPoolManager: No enemy prefabs assigned.");
+                return null;
+            }
+
+            return enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
+        }
     }
 }
+
