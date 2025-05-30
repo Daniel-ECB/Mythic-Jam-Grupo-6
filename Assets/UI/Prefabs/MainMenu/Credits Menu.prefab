@@ -276,9 +276,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Arte\nDiego D\xEDaz, Mateo Vicencio, Natalia Perulan, Rosario O\xF1a,
-    Sebasti\xE1n Nanfra\n\nDise\xF1o\nLucio Alcaide\n\nProgramaci\xF3n\nBautista
-    Merlo, Daniel Corzo, Ignacio Rodr\xEDguez\n\nSonido\nSantiago Aguilar"
+  m_text: "Arte\nAndr\xE9s (illumisanic), Diego D\xEDaz, Mateo Vicencio, Natalia
+    Perulan, Nico (sr.haiiro), Rosario O\xF1a, Sebasti\xE1n Nanfra\n\nDise\xF1o\nLucio
+    Alcaide\n\nProgramaci\xF3n\nBautista Merlo, Daniel Corzo, Facundo Nimes, Ignacio
+    Rodr\xEDguez\n\nSonido\nSantiago Aguilar\n\nAgradecimiento Especial\nDan Raider,
+    Fr4nk"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dfe1808ced6793c47939a0c94acd42f4, type: 2}
   m_sharedMaterial: {fileID: -1226515996318036910, guid: dfe1808ced6793c47939a0c94acd42f4, type: 2}
@@ -305,8 +307,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 21
+  m_fontSizeBase: 21
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
