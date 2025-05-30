@@ -40,5 +40,14 @@ namespace MythicGameJam.Audio
         {
             audioSource.volume = volume;
         }
+
+        public void PlayMusic(AudioClip clip)
+        {
+            if (audioSource.clip != clip)
+            {
+                audioSource.clip = clip;
+                audioSource.Play();
+            }
+        }
     }
 }

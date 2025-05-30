@@ -250,6 +250,7 @@ MonoBehaviour:
   _mainMenu: {fileID: 1694101656}
   _optionsMenu: {fileID: 826193774}
   _creditsMenu: {fileID: 2100198848}
+  _mainMenuClip: {fileID: 8300000, guid: 5e7bb86c137814b45b819abf0ed4647c, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

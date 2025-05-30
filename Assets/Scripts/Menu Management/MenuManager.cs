@@ -1,3 +1,4 @@
+using MythicGameJam.Audio;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,6 +23,9 @@ namespace MythicGameJam.UI.Menus
         [SerializeField]
         private UIMenu _creditsMenu;
 
+        [SerializeField]
+        private AudioClip _mainMenuClip;
+
         private readonly Dictionary<MenuType, UIMenu> _menuMap = new();
         private MenuType _currentMenu;
         private Coroutine _transitionRoutine;
@@ -34,6 +38,12 @@ namespace MythicGameJam.UI.Menus
             InitializeMenuMap();
             ValidateMenus();
             SwitchMenu(MenuType.Main, instant: true);
+        }
+
+        private void Start()
+        {
+            if (_mainMenuClip != null)
+                BaseAudioSystem.Instance.PlayMusic(_mainMenuClip);
         }
 
         private void InitializeMenuMap()

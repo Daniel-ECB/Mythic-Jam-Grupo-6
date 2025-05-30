@@ -1,7 +1,8 @@
+using MythicGameJam.Audio;
+using MythicGameJam.Core.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using MythicGameJam.Core.Utils;
 
 namespace MythicGameJam.UI.Menus
 {
@@ -19,6 +20,9 @@ namespace MythicGameJam.UI.Menus
         [SerializeField]
         private VictoryMenu _victoryMenu;
 
+        [SerializeField]
+        private AudioClip _gameplayClip;
+
         private readonly Dictionary<SubmenuType, UIMenu> _submenuMap = new();
         private SubmenuType? _currentSubmenu;
 
@@ -27,6 +31,12 @@ namespace MythicGameJam.UI.Menus
             base.Awake();
             InitializeSubmenuMap();
             HideAllSubmenus();
+        }
+
+        private void Start()
+        {
+            if (_gameplayClip != null)
+                BaseAudioSystem.Instance.PlayMusic(_gameplayClip);
         }
 
         private void InitializeSubmenuMap()
