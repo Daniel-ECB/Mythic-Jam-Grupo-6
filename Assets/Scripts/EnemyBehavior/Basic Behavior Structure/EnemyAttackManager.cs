@@ -12,6 +12,8 @@ public class EnemyAttackController : MonoBehaviour
     [SerializeField] private AnimationClip loopAttackAnimation;
     private int currentAttackIndex = 0;
     private bool isAttacking = false;
+    public Vector2 LastMovementDirection { get; set; }
+
     void Start()
     {
         enemyRenderer = GetComponent<Renderer>();
@@ -65,11 +67,22 @@ public class EnemyAttackController : MonoBehaviour
     }
     private float GetCurrentAnimationLength()
     {
-        if (currentAttackIndex - 1 < attackAnimations.Length)
+        if (attackAnimations == null || attackAnimations.Length == 0)
+        {
+            return 0.1f; 
+        }
+
+        if (currentAttackIndex - 1 >= 0 && currentAttackIndex - 1 < attackAnimations.Length)
         {
             return attackAnimations[currentAttackIndex - 1].length;
         }
-        return loopAttackAnimation.length;
+
+        if (loopAttackAnimation != null)
+        {
+            return loopAttackAnimation.length;
+        }
+
+        return 0.1f;
     }
     private void StopAttack()
     {

@@ -7,10 +7,11 @@ public class EnemyMovementController : MonoBehaviour
     [SerializeField] public static float minY = -10f;
     [SerializeField] public static float maxY = 10f;
     [SerializeField] private float speed = 2f;
+    public float Speed => speed;
     [SerializeField] private float delayBeforeMove;
     [SerializeField] private bool isMoving;
     private float delayTimer = 0f;
-    private bool canMove = false;
+    private bool canMove = true;
     private Vector3 lastPosition;
     private SpriteRenderer spriteRenderer;
     [SerializeField] Animator animator;
