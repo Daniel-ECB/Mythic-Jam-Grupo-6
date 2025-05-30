@@ -1,6 +1,6 @@
-using UnityEngine;
-using MythicGameJam.Input;
 using MythicGameJam.Core.GameManagement;
+using MythicGameJam.Input;
+using UnityEngine;
 
 namespace MythicGameJam.Player
 {

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -4581034738848525503}
   m_Layer: 0
   m_Name: WaterProjectile
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,4 +189,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.546875
+  m_Radius: 0.5

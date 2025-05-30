@@ -2,53 +2,56 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 
-[CustomEditor(typeof(BulletPool))]
-public class BulletPoolEditor : Editor
+namespace MythicGameJam.Bullets
 {
-    public override void OnInspectorGUI()
+    [CustomEditor(typeof(BulletPool))]
+    public class BulletPoolEditor : Editor
     {
-        BulletPool pool = (BulletPool)target;
-
-        EditorGUILayout.LabelField("Bullet Prefabs por Tipo", EditorStyles.boldLabel);
-
-        // Asegurarse de que hay una entrada por cada tipo
-        if (pool.bulletPrefabs == null)
+        public override void OnInspectorGUI()
         {
-            pool.bulletPrefabs = new List<BulletPool.BulletPrefabByType>();
-        }
+            BulletPool pool = (BulletPool)target;
 
-        foreach (BulletType type in System.Enum.GetValues(typeof(BulletType)))
-        {
-            int index = pool.bulletPrefabs.FindIndex(b => b.bulletType == type);
+            EditorGUILayout.LabelField("Bullet Prefabs por Tipo", EditorStyles.boldLabel);
 
-            BulletPool.BulletPrefabByType entry;
-            if (index >= 0)
+            // Asegurarse de que hay una entrada por cada tipo
+            if (pool.bulletPrefabs == null)
             {
-                entry = pool.bulletPrefabs[index];
-            }
-            else
-            {
-                entry = new BulletPool.BulletPrefabByType { bulletType = type };
+                pool.bulletPrefabs = new List<BulletPool.BulletPrefabByType>();
             }
 
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField(type.ToString(), GUILayout.Width(100));
-            entry.bulletPrefab = (BulletBehaviour)EditorGUILayout.ObjectField(entry.bulletPrefab, typeof(BulletBehaviour), false);
-            EditorGUILayout.EndHorizontal();
-
-            if (index >= 0)
+            foreach (BulletType type in System.Enum.GetValues(typeof(BulletType)))
             {
-                pool.bulletPrefabs[index] = entry;
-            }
-            else
-            {
-                pool.bulletPrefabs.Add(entry);
-            }
-        }
+                int index = pool.bulletPrefabs.FindIndex(b => b.bulletType == type);
 
-        if (GUI.changed)
-        {
-            EditorUtility.SetDirty(pool);
+                BulletPool.BulletPrefabByType entry;
+                if (index >= 0)
+                {
+                    entry = pool.bulletPrefabs[index];
+                }
+                else
+                {
+                    entry = new BulletPool.BulletPrefabByType { bulletType = type };
+                }
+
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField(type.ToString(), GUILayout.Width(100));
+                entry.bulletPrefab = (BulletBehaviour)EditorGUILayout.ObjectField(entry.bulletPrefab, typeof(BulletBehaviour), false);
+                EditorGUILayout.EndHorizontal();
+
+                if (index >= 0)
+                {
+                    pool.bulletPrefabs[index] = entry;
+                }
+                else
+                {
+                    pool.bulletPrefabs.Add(entry);
+                }
+            }
+
+            if (GUI.changed)
+            {
+                EditorUtility.SetDirty(pool);
+            }
         }
     }
 }

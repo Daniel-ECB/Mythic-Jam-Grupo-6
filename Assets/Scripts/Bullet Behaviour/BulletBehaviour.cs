@@ -1,30 +1,37 @@
 using UnityEngine;
 
-public class BulletBehaviour : MonoBehaviour
+namespace MythicGameJam.Bullets
 {
-    public float speed = 10f;
-    public float lifeTime = 3f;
-    private float timer;
-
-    void OnEnable()
+    public sealed class BulletBehaviour : MonoBehaviour
     {
-        timer = 0f;
-    }
+        [SerializeField]
+        private float speed = 10f;
+        [SerializeField]
+        private float lifeTime = 3f;
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player") && !other.CompareTag("Bullet"))
+        private float timer;
+        private Vector2 _direction = Vector2.up; // Default direction
+
+        /// <summary>
+        /// Set the direction of the bullet. Should be called immediately after spawning.
+        /// </summary>
+        public void SetDirection(Vector2 direction)
         {
-            
-            gameObject.SetActive(false);
+            _direction = direction.normalized;
         }
-    }
 
-    void Update()
-    {
-        transform.Translate(Vector2.up * speed * Time.deltaTime);
-        timer += Time.deltaTime;
-        if (timer >= lifeTime)
-            gameObject.SetActive(false);
+        void OnEnable()
+        {
+            timer = 0f;
+        }
+
+        void Update()
+        {
+            transform.Translate(_direction * speed * Time.deltaTime, Space.World);
+            timer += Time.deltaTime;
+
+            if (timer >= lifeTime)
+                Destroy(gameObject);
+        }
     }
 }
