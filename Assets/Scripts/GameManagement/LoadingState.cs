@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
@@ -7,11 +8,13 @@ namespace MythicGameJam.Core.GameManagement
     {
         private readonly GameManager _gameManager;
         private readonly string _targetScene;
+        private readonly Action _onLoaded;
 
-        public LoadingState(GameManager gameManager, string targetScene)
+        public LoadingState(GameManager gameManager, string targetScene, Action onLoaded)
         {
             _gameManager = gameManager;
             _targetScene = targetScene;
+            _onLoaded = onLoaded;
         }
 
         public void Enter()
@@ -42,7 +45,7 @@ namespace MythicGameJam.Core.GameManagement
             if (fader != null)
                 yield return fader.FadeIn();
 
-            _gameManager.StartGameplay();
+            _onLoaded?.Invoke();
         }
     }
 }

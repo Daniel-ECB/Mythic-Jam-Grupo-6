@@ -11,6 +11,7 @@ namespace MythicGameJam.Input
         public event Action<Vector2> OnMove;
         public event Action<Vector2> OnLook;
         public event Action OnAttack;
+        public event Action OnPause;
 
         public InputSystem_Actions InputActions => _inputActions;
 
@@ -31,6 +32,8 @@ namespace MythicGameJam.Input
             _inputActions.Player.Look.canceled += HandleLook;
 
             _inputActions.Player.Attack.performed += HandleAttack;
+
+            _inputActions.Player.Pause.performed += HandlePause;
         }
 
         private void OnDisable()
@@ -45,6 +48,8 @@ namespace MythicGameJam.Input
             _inputActions.Player.Look.canceled -= HandleLook;
 
             _inputActions.Player.Attack.performed -= HandleAttack;
+
+            _inputActions.Player.Pause.performed -= HandlePause;
 
             _inputActions.Disable();
         }
@@ -65,6 +70,12 @@ namespace MythicGameJam.Input
         {
             if (context.performed)
                 OnAttack?.Invoke();
+        }
+
+        private void HandlePause(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+                OnPause?.Invoke();
         }
     }
 }

@@ -1,25 +1,34 @@
-using MythicGameJam.Core.GameManagement;
+using MythicGameJam.UI.Menus;
+using UnityEngine;
 
-public sealed class PauseState : IGameState
+namespace MythicGameJam.Core.GameManagement
 {
-    private readonly GameManager _gameManager;
-    public PauseState(GameManager gameManager)
+    public sealed class PauseState : IGameState
     {
-        _gameManager = gameManager;
-    }
+        private readonly GameManager _gameManager;
 
-    public void Enter()
-    {
-        // Show pause menu, freeze gameplay, etc.
-    }
+        public PauseState(GameManager gameManager)
+        {
+            _gameManager = gameManager;
+        }
 
-    public void Exit()
-    {
-        // Hide pause menu, resume gameplay, etc.
-    }
+        public void Enter()
+        {
+            _gameManager.IsPaused = true;
+            Time.timeScale = 0f;
+            GameplayMenuManager.Instance.ShowSubmenu(GameplayMenuManager.SubmenuType.PauseMenu);
+        }
 
-    public void Update()
-    {
-        // Handle input for resuming the game, quitting to main menu, etc.
+        public void Exit()
+        {
+            _gameManager.IsPaused = false;
+            Time.timeScale = 1f;
+            GameplayMenuManager.Instance.HideAllSubmenus();
+        }
+
+        public void Update()
+        {
+            // No update logic needed for pause state (input is handled via UI or InputManager)
+        }
     }
 }

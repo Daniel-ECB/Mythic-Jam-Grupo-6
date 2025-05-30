@@ -1,5 +1,6 @@
 using UnityEngine;
 using MythicGameJam.Input;
+using MythicGameJam.Core.GameManagement;
 
 namespace MythicGameJam.Player
 {
@@ -42,7 +43,12 @@ namespace MythicGameJam.Player
 
         private void FixedUpdate()
         {
-            // Movement logic
+            if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+            {
+                _rigidbody2D.linearVelocity = Vector2.zero;
+                return;
+            }
+
             if (_moveInput != Vector2.zero)
                 _rigidbody2D.AddForce(_moveInput * _stats.acceleration);
 
