@@ -10,5 +10,6 @@ namespace MythicGameJam.Player
         public float linearDamping = 5f;
         public GameObject projectilePrefab;
         public Sprite playerSprite;
+        public RuntimeAnimatorController animatorController;
     }
 }

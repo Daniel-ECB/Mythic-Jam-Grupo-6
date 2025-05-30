@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f84ed281b68d46479f721747813174d, type: 3}
   m_Name: PlayerStats_Human
   m_EditorClassIdentifier: 
-  moveSpeed: 80
-  acceleration: 35
+  moveSpeed: 95
+  acceleration: 40
+  linearDamping: 5
   projectilePrefab: {fileID: 0}
   playerSprite: {fileID: 21300000, guid: b6376bc85c0984b4ab386851dd1f2a12, type: 3}
+  animatorController: {fileID: 9100000, guid: 728dff1d544ea864ebba1eb518127e09, type: 2}
