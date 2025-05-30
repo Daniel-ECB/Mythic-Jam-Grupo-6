@@ -13,6 +13,17 @@ namespace MythicGameJam.Core.GameManagement
         private PauseState _pauseState;
         private LoadingState _loadingState;
 
+        private bool _isPaused = false;
+
+        [SerializeField]
+        private string _debugCurrentState; // This is only for debug purposes, can be removed in production
+
+        public bool IsPaused
+        {
+            get => _isPaused; 
+            set => _isPaused = value;
+        }
+
         protected override void Awake()
         {
             base.Awake();
@@ -30,13 +41,14 @@ namespace MythicGameJam.Core.GameManagement
             _currentState?.Update();
         }
 
-        public void ChangeState(IGameState newState)
+        private void ChangeState(IGameState newState)
         {
             if (_currentState == newState)
                 return;
 
             _currentState?.Exit();
             _currentState = newState;
+            _debugCurrentState = newState.GetType().Name;
             _currentState?.Enter();
         }
 
@@ -44,18 +56,10 @@ namespace MythicGameJam.Core.GameManagement
         public void StartGameplay() => ChangeState(_gameplayState);
         public void PauseGame() => ChangeState(_pauseState);
 
-        public void LoadScene(string sceneName)
+        public void LoadScene(string sceneName, System.Action onLoaded)
         {
-            _loadingState = new LoadingState(this, sceneName);
+            _loadingState = new LoadingState(this, sceneName, onLoaded);
             ChangeState(_loadingState);
-        }
-
-        public void QuitGame()
-        {
-            Application.Quit();
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#endif
         }
     }
 }
