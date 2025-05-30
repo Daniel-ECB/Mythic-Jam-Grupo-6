@@ -1,21 +1,23 @@
 using UnityEngine;
 
-public class ShooterDemo : MonoBehaviour
+namespace MythicGameJam.Bullets
 {
-    public BulletType bulletType = BulletType.Human;
-    public float shootCooldown = 0.2f;
-
-    private float timer;
-
-    void Update()
+    public class ShooterDemo : MonoBehaviour
     {
-        timer += Time.deltaTime;
+        public BulletType bulletType = BulletType.Human;
+        public float shootCooldown = 0.2f;
 
-        if (Input.GetKey(KeyCode.Space) && timer >= shootCooldown)
+        private float timer;
+
+        void Update()
         {
-            BulletPool.Instance.SpawnBullet(bulletType, transform.position, Quaternion.identity);
-            timer = 0f;
+            timer += Time.deltaTime;
+
+            if (UnityEngine.Input.GetKey(KeyCode.Space) && timer >= shootCooldown)
+            {
+                BulletPool.Instance.SpawnBullet(bulletType, transform.position, Quaternion.identity);
+                timer = 0f;
+            }
         }
     }
 }
-

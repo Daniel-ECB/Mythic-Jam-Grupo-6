@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using MythicGameJam.Bullets;
 
-public class BulletPool : MonoBehaviour
+public sealed class BulletPool : MonoBehaviour
 {
     public static BulletPool Instance;
 
@@ -58,12 +59,12 @@ public class BulletPool : MonoBehaviour
         return bullet;
     }
 
-BulletBehaviour GetPrefabByType(BulletType type)
-{
-    foreach (var b in bulletPrefabs)
-        if (b.bulletType == type)
-            return b.bulletPrefab;
-    return null;
+    BulletBehaviour GetPrefabByType(BulletType type)
+    {
+        foreach (var b in bulletPrefabs)
+            if (b.bulletType == type)
+                return b.bulletPrefab;
+        return null;
+    }
 }
 
-}

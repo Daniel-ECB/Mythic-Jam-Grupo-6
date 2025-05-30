@@ -1,5 +1,6 @@
 using MythicGameJam.Core.Utils;
 using UnityEngine;
+using System;
 
 namespace MythicGameJam.Core.GameManagement
 {
@@ -10,7 +11,6 @@ namespace MythicGameJam.Core.GameManagement
         // State references
         private HomeScreenState _homeScreenState;
         private GameplayState _gameplayState;
-        private PauseState _pauseState;
         private LoadingState _loadingState;
 
         private bool _isPaused = false;
@@ -20,7 +20,7 @@ namespace MythicGameJam.Core.GameManagement
 
         public bool IsPaused
         {
-            get => _isPaused; 
+            get => _isPaused;
             set => _isPaused = value;
         }
 
@@ -31,7 +31,6 @@ namespace MythicGameJam.Core.GameManagement
             // Instantiate states (pass GameManager or other dependencies as needed)
             _homeScreenState = new HomeScreenState(this);
             _gameplayState = new GameplayState(this);
-            _pauseState = new PauseState(this);
 
             ChangeState(_homeScreenState);
         }
@@ -52,9 +51,15 @@ namespace MythicGameJam.Core.GameManagement
             _currentState?.Enter();
         }
 
+        public void PauseGame(Action onEnterMenu = null)
+        {
+            Action menuAction = onEnterMenu ?? (() => MythicGameJam.UI.Menus.GameplayMenuManager.Instance.ShowSubmenu(
+                MythicGameJam.UI.Menus.GameplayMenuManager.SubmenuType.PauseMenu));
+            ChangeState(new PauseState(this, menuAction));
+        }
+
         public void GoToHomeScreen() => ChangeState(_homeScreenState);
         public void StartGameplay() => ChangeState(_gameplayState);
-        public void PauseGame() => ChangeState(_pauseState);
 
         public void LoadScene(string sceneName, System.Action onLoaded)
         {

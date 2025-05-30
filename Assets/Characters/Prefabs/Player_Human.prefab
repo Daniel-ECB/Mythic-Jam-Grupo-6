@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 4768703160610524614}
   - component: {fileID: 7148125848754032700}
   - component: {fileID: 5497790161493575104}
+  - component: {fileID: 9121742896166186117}
+  - component: {fileID: -3354418678054422899}
   m_Layer: 0
   m_Name: Player_Human
   m_TagString: Player
@@ -35,7 +37,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5971701227906845711}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &675121599936709800
@@ -202,7 +205,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 9a30982854582424491ae29c8e38a986, type: 2}
   _rigidbody2D: {fileID: 7657056007520488147}
-  _spriteRenderer: {fileID: 675121599936709800}
 --- !u!114 &7148125848754032700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,3 +232,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 9a30982854582424491ae29c8e38a986, type: 2}
   _animator: {fileID: 2963417915050436236}
+--- !u!114 &9121742896166186117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4718788424193436229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1d81b1891c13c4aa6ec2082109d3ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6807986711891665484, guid: 2377a21d6de691245b94119e4704948d, type: 3}
+  firePoint: {fileID: 5971701227906845711}
+  shootCooldown: 0.2
+--- !u!114 &-3354418678054422899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4718788424193436229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fc798d57857a740ac558a238a6948a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7893313784909076181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5971701227906845711}
+  m_Layer: 0
+  m_Name: ShootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5971701227906845711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7893313784909076181}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3597936929725735702}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
