@@ -38,10 +38,13 @@ namespace MythicGameJam.Player
             Vector2 shootDirection = transform.right; // In Unity 2D, right (X) is the "forward" direction
 
             // Spawn bullet
-            GameObject bulletObj = Instantiate(bulletPrefab, spawnPos, Quaternion.identity);
+            GameObject bulletObj = BulletsPool.Instance.GetBullet(bulletPrefab, spawnPos, Quaternion.identity);
             var bullet = bulletObj.GetComponent<BulletBehaviour>();
             if (bullet != null)
+            {
                 bullet.SetDirection(shootDirection);
+                bullet.SetPrefabReference(bulletPrefab);
+            }
         }
     }
 }

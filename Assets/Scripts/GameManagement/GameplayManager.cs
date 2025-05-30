@@ -1,10 +1,9 @@
-using UnityEngine;
+using MythicGameJam.Core.Utils;
 
 namespace MythicGameJam.Core.GameManagement
 {
-    public sealed class GameplayManager : MonoBehaviour
+    public sealed class GameplayManager : Singleton<GameplayManager>
     {
-        // Add victory/defeat logic here
-        // Reference PlayerFormManager, handle win conditions, etc.
+
     }
 }
