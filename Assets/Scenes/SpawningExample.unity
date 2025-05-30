@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22a5a13b56e4412438a687eaab8ed78e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnLoad: 0
   enemyPrefabs:
   - {fileID: 363626605946654704, guid: e2b44911d7e690c4ab1c113ca356eaea, type: 3}
   initialPoolSize: 10
