@@ -43,7 +43,7 @@ namespace MythicGameJam.Bullets
                 ReturnToPool();
         }
 
-        private void ReturnToPool()
+        public void ReturnToPool()
         {
             if (_prefabReference != null)
                 BulletsPool.Instance.ReturnBullet(_prefabReference, gameObject);

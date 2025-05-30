@@ -82,13 +82,18 @@ namespace MythicGameJam.Enemies
             if (_activeEnemies.Contains(enemy))
                 _activeEnemies.Remove(enemy);
 
-            // Return to the correct pool
+            ReturnToPool(enemy);
+        }
+
+        public void ReturnToPool(GameObject enemy)
+        {
             if (enemy.CompareTag("Asura"))
                 _asuraPool.Enqueue(enemy);
             else if (enemy.CompareTag("Preta"))
                 _pretaPool.Enqueue(enemy);
 
             enemy.SetActive(false);
+            _activeEnemies.Remove(enemy);
         }
     }
 }

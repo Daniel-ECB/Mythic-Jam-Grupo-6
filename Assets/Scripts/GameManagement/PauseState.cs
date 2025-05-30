@@ -1,22 +1,33 @@
 using MythicGameJam.UI.Menus;
 using UnityEngine;
+using System;
 
 namespace MythicGameJam.Core.GameManagement
 {
     public sealed class PauseState : IGameState
     {
         private readonly GameManager _gameManager;
+        private readonly Action _onEnterMenu;
 
-        public PauseState(GameManager gameManager)
+        public PauseState(GameManager gameManager, Action onEnterMenu = null)
         {
             _gameManager = gameManager;
+            _onEnterMenu = onEnterMenu;
         }
 
         public void Enter()
         {
             _gameManager.IsPaused = true;
             Time.timeScale = 0f;
-            GameplayMenuManager.Instance.ShowSubmenu(GameplayMenuManager.SubmenuType.PauseMenu);
+
+            if (_onEnterMenu != null)
+            {
+                _onEnterMenu.Invoke();
+            }
+            else
+            {
+                GameplayMenuManager.Instance.ShowSubmenu(GameplayMenuManager.SubmenuType.PauseMenu);
+            }
         }
 
         public void Exit()

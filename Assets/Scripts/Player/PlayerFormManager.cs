@@ -1,9 +1,10 @@
+using MythicGameJam.Core.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace MythicGameJam.Player
 {
-    public sealed class PlayerFormManager : MonoBehaviour
+    public sealed class PlayerFormManager : Singleton<PlayerFormManager>
     {
         public enum PlayerForm { Human, Elephant, Cow }
 
@@ -34,11 +35,11 @@ namespace MythicGameJam.Player
             // Simulate hit with space bar
             if (UnityEngine.Input.GetKeyDown(KeyCode.Space))
             {
-                TakeHit();
+                RegisterHit();
             }
         }
 
-        public void TakeHit()
+        public void RegisterHit()
         {
             _currentHits++;
             if (_currentHits >= hitsToTransform)

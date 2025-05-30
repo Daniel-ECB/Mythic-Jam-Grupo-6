@@ -29,7 +29,8 @@ namespace MythicGameJam.Core.GameManagement
 
         private void HandlePause()
         {
-            _gameManager.PauseGame();
+            _gameManager.PauseGame(() => MythicGameJam.UI.Menus.GameplayMenuManager.Instance.ShowSubmenu(
+                    MythicGameJam.UI.Menus.GameplayMenuManager.SubmenuType.PauseMenu));
         }
     }
 }

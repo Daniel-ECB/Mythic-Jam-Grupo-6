@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7929504148983771585}
   - component: {fileID: 1341039603531171395}
   - component: {fileID: -8341456756281789237}
+  - component: {fileID: 7149266210735938627}
   m_Layer: 0
   m_Name: Enemy_Preta
   m_TagString: Preta
@@ -162,5 +163,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1376438577418333256, guid: 98b8922843d0d5e43bbe68b853257a51, type: 3}
-  shootInterval: 3
+  shootInterval: 0.6
   spawnRadius: 1.2
+--- !u!114 &7149266210735938627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442250840112752540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7a461ecd5b42c94496e995802a3f639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

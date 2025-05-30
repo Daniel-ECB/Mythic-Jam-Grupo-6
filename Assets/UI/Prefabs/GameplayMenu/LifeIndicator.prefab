@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 9025696795873162043}
   - component: {fileID: 8505161310044983049}
   m_Layer: 5
-  m_Name: PetalsOn
+  m_Name: PetalsFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 6607199868024639164}
   - component: {fileID: 2302401992270869320}
   m_Layer: 5
-  m_Name: PetalsOff
+  m_Name: PetalsBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

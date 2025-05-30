@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1167908689263839699}
   - component: {fileID: -7221087361603984797}
   - component: {fileID: 312854354272534921}
+  - component: {fileID: -179656829873601791}
   m_Layer: 0
   m_Name: Enemy_Asura
   m_TagString: Asura
@@ -162,5 +163,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 432607026781066402, guid: 2a87bdb251980154e8aac325b0f0a740, type: 3}
-  shootInterval: 3
+  shootInterval: 0.6
   spawnRadius: 1.2
+--- !u!114 &-179656829873601791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4879353550101752129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7a461ecd5b42c94496e995802a3f639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
